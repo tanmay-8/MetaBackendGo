@@ -320,7 +320,7 @@ func (u UserService) GetEmail(name string, participantNames string) string {
                     >, focusing on Docker & Kubernetes.💜
                   </p>
                   <p>
-                    <strong>Participant Names:</strong><br />
+                    <strong>Participant Name(s):</strong><br />
                     ` + participantNames + `
                   </p>
                   You will have access to all the sessions and activities we
@@ -342,7 +342,7 @@ func (u UserService) GetEmail(name string, participantNames string) string {
                       MetaMorphosis 2K25 Website:</strong
                     >
                     <a
-                      href="https://meta2k25.vercel.app/"
+                      href="https://meta2k25.wcewlug.org/"
                       style="font-size: 17px"
                       >meta2k25.wcewlug.org</a
                     >
