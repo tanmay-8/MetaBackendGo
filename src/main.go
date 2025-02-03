@@ -30,7 +30,7 @@ func main() {
 
 	muxRouter.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "application/json")
-		w.Write([]byte(`{"message": "Welcome to LinuxDiary5.0"}`))
+		w.Write([]byte(`{"message": "Welcome to Metamorphosis"}`))
 	}).Methods("GET")
 
 	muxRouter.HandleFunc("/user/registration", func(w http.ResponseWriter, r *http.Request) {
