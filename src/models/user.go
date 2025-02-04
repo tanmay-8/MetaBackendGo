@@ -36,6 +36,7 @@ type Registration struct {
 	TransactionID     string             `bson:"transactionId" json:"transactionId"`
 	TransactionImage  string             `bson:"transactionImage" json:"transactionImage"`
 	MailSent          bool               `bson:"mailSent,omitempty" json:"mailSent"`
+	ReferralCode      string             `bson:"referralCode" json:"referralCode"`
 	CreatedAt         time.Time          `bson:"createdAt,omitempty" json:"createdAt"`
 	UpdatedAt         time.Time          `bson:"updatedAt,omitempty" json:"updatedAt"`
 }

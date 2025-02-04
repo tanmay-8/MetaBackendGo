@@ -34,6 +34,7 @@ func (u UserService) RegisterParticipants(w http.ResponseWriter, r *http.Request
 	// Extract `participants` from form data
 	participantsStr := r.FormValue("participants")
 	transactionID := r.FormValue("transactionId")
+	referralCode := r.FormValue("referralCode")
 
 	// Debugging: Print raw form values
 	log.Println("Participants (raw):", participantsStr)
@@ -108,6 +109,7 @@ func (u UserService) RegisterParticipants(w http.ResponseWriter, r *http.Request
 		TotalAmount:       0,
 		TransactionID:     transactionID,
 		TransactionImage:  imageURL,
+		ReferralCode:      referralCode,
 	}
 
 	if _, err := u.DbAdapter.CreateRegistration(ctx, registration); err != nil {
